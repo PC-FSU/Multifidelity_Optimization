@@ -21,7 +21,7 @@ Given: Gaussian Process Model $M$, Acquisition function $\alpha$, $f(x,s)$, cost
 
    b. $y_{n+1} = f(x_{n+1}, s_{n+1})$
 
-   c. Augment Data $ D = {\{D, (x_{n+1}, y_{n+1}, s_{n+1})}\}$
+   c. Augment Data $D = {\{D, (x_{n+1}, y_{n+1}, s_{n+1})}\}$
 
    d. Update GP model, $M$.
 
