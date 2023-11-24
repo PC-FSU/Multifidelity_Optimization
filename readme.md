@@ -64,7 +64,7 @@ Once the best hyperparameters $\hat{\theta}$ are found, inference on a new point
 <hr>
 
 
-### `Probability of Improvement`
+### `Probability of improvement`
 
 The easiest acquisition function designed for Bayesian optimization was the probability of improvement. Let $f_0 = \min f$ represent the minimal value of $f$ observed thus far. The probability of improvement assesses $f$ at the point most likely to improve this value. It corresponds to the utility function $u(x)$ associated with evaluating $f$ at a given point $x$:
 
@@ -124,8 +124,8 @@ def expected_improvement(X, gaussian_process, evaluated_loss, xi=0.01):
 
 The figure illustrates that EI is highest around the function's minimum, concentrating the search in the area of optimal performance. To balance this bias, introducing a trade-off value $\xi$ is crucial. In Expected Improvement, this value determines the sacrificed performance (in original units) when assessing improvement, serving as a compromise between exploration and exploitation.
 
-In file [EI.py]() contain the code to genereate the 
 
+ 
 ### `Entropy search`
 
 
@@ -136,7 +136,7 @@ Entropy search seeks to evaluate points so as to minimize the entropy of the ind
 $$ u(x) = H[p(x_* | D)] - H[p(x_* |D \cup \{x, f(x)\})] $$
 
 
-As in probability of improvement and expected improvement, we may build an acquisition function by evaluating the expected utility provided by evaluating $f$ at a point $x$. Due to the nature of the distribution $p(x_*| D)$, this is somewhat complicated, and a series of approximations must be made for both LHS and RHS term. Please look at [link1](https://botorch.org/tutorials/max_value_entropy) [link2](https://botorch.org/tutorials/max_value_entropy) to see how max value is calculated. 
+As in probability of improvement and expected improvement, we may build an acquisition function by evaluating the expected utility provided by evaluating $f$ at a point $x$. Due to the nature of the distribution $p(x_*| D)$, this is somewhat complicated, and a series of approximations must be made for both LHS and RHS term. Please look at [link1](https://botorch.org/tutorials/max_value_entropy) [link2](https://gregorygundersen.com/blog/2020/10/28/predictive-entropy-search/) to see how max value is calculated. 
 
 ### `Knowledge Gradient`
 

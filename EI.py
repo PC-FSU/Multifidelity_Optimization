@@ -53,6 +53,6 @@ plt.xlabel('X')
 plt.ylabel('Expected Improvement')
 plt.title('Expected Improvement (EI)')
 plt.legend()
-
 plt.tight_layout()
+plt.savefig('readme_figs/EI.pdf')
 plt.show()
