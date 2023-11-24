@@ -39,6 +39,24 @@ Given: Gaussian Process Model $M$, Acquisition function $\alpha$, $f(x,s)$, cost
 
 
 # Test functions
+Illustration of different test functions assessed at varying fidelity levels. Specifically, for functions like Branin and Currin, the trajectories of the global maximum can be observed across different fidelity values.
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Currin_Hartmann.png)
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Brannin_forrestor.png)
+
+# Control variables
+These are different variables that we changed to do the emperical study.
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/control_variable.png)
+
+# Results
+
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Forrestor_result.png)
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Forrestor_result2.png)
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Hartmann_result.png)
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Currin_result.png)
+![Screenshot](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/readme_figs/Effect_of_kernel.png)
+
+
+
 
 
 
