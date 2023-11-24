@@ -42,7 +42,10 @@ Given: Gaussian Process Model $M$, Acquisition function $\alpha$, $f(x,s)$, cost
 - [MFBO_MVES_MFKB_serial.py](MFBO_MVES_MFKB_serial.py): Integrates all the code into a single file for sequential execution.
 - [MFBO_MVES_MFKB_Parellel.py](MFBO_MVES_MFKB_Parellel.py): Enables running the entire program with support for parallel functionality.
 
-
+To run the experiment:
+```bash
+   python run.py --PASS_THE_CMD_ARGS
+```
 
 # Acquisition function
 `The next section is a short theoretical primer about acquisition function. Feel free to skip this, keeping in mind that "Acquisition functions are mathematical techniques that guide the exploration of the parameter space during Bayesian optimization."` You can find the PDF [here](https://github.com/PC-FSU/Multifidelity_Optimization/blob/main/Acquisition_Function.pdf)
